@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Quinten De Man - UMD"
 title_separator          : "-"
 name                     : &name "Quinten De Man"
@@ -22,7 +22,7 @@ repository               : "quintendeman/quintendeman.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot_cropped.jpg"
+  avatar           : "headshot_2025_1_cropped.jpg"
   name             : "Quinten De Man"
   pronouns         : # example: "she/her"  
   bio              : ""

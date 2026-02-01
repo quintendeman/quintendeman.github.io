@@ -11,7 +11,7 @@ collection: publications
 category: conference
 excerpt: "We present the first parallel algorithm for batch-dynamic graph connectivity that is work-efficient, uses linear space, and handles updates in polylogarithmic time. We study the performance of the cluster forest algorithm sequentially."
 date: 2024-11-01
-venue: 'Proceedings of the VLDB Endownment, Volume 18, Issue 3'
+venue: "VLDB '25: Proceedings of the VLDB Endownment, Volume 18, Issue 3"
 paperurl: 'https://dl.acm.org/doi/10.14778/3712221.3712250'
 arxivurl: 'https://arxiv.org/abs/2411.11781'
 ---

@@ -21,6 +21,7 @@ My research interests are broadly in graph algorithms, parallel algorithms, and 
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
+  {% assign pub_num = 0 %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
@@ -31,12 +32,13 @@ My research interests are broadly in graph algorithms, parallel algorithms, and 
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% assign pub_num = pub_num | plus: 1 %}
+      {% include archive-single.html pub_index=pub_num %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include archive-single.html pub_index=forloop.index %}
   {% endfor %}
 {% endif %}
 

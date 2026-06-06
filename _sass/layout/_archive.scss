@@ -40,7 +40,6 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
   a + a {
@@ -48,11 +47,59 @@
   }
 }
 
-/* remove border*/
-.page__content {
+.archive .list__item:first-of-type .archive__item-title {
+  margin-top: 1em;
+}
+
+.archive .archive__item,
+.page__content .archive__item {
+  p {
+    margin: 0 0 0.25em;
+    line-height: 1.3;
+  }
 
   .archive__item-title {
-    margin-top: 1em;
+    margin: 2em 0 0.2em;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.3;
+    border-bottom: none;
+  }
+
+  > :not(.archive__item-title):not(.archive__item-teaser) {
+    padding-left: 1.5em;
+  }
+
+  .archive__item-number {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .archive__item-summary {
+    margin: 0.15em 0 0;
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      line-height: 1.3;
+      user-select: none;
+    }
+
+    p {
+      margin: 0.2em 0 0;
+      line-height: 1.3;
+    }
+  }
+
+  .archive__item-links {
+    margin: 0;
+  }
+}
+
+/* remove border on archive titles inside page content */
+.page__content {
+  .archive__item-title {
     border-bottom: none;
   }
 }

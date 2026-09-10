@@ -9,7 +9,7 @@ authors:
 collection: publications
 category: conference
 excerpt: "We introduce hybrid sketching for dynamic connectivity: sketch dense graph cores and store sparse peripheries losslessly. Our HybridSCALE system is the first sketch-based dynamic connectivity implementation to save space on sparse real-world graphs."
-date: 2026-05-19
+date: 2026-09-10
 venue: "Submitted to SIGMOD 2027"
 arxivurl: 'https://arxiv.org/abs/2605.15173'
 ---
